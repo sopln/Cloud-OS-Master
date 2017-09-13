@@ -1,0 +1,224 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(content='IE=edge', http-equiv='X-UA-Compatible')
+    meta(content='initial-scale=1.0, width=device-width', name='viewport')
+    title Test
+    // css
+    link(href='../css/base.min.css', rel='stylesheet')
+    // css for this project
+    link(href='../css/project.min.css', rel='stylesheet')
+    link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css', rel='stylesheet')
+    // favicon
+    // ...
+    // ie
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+  body.avoid-fout.page-brand
+    .avoid-fout-indicator.avoid-fout-indicator-fixed
+      .progress-circular.progress-circular-center
+        .progress-circular-wrapper
+          .progress-circular-inner
+            .progress-circular-left
+              .progress-circular-spinner
+            .progress-circular-gap
+            .progress-circular-right
+              .progress-circular-spinner
+    header.header.header-transparent.header-waterfall
+      ul.nav.nav-list.pull-left
+        li
+          a(data-toggle='menu', href='#menu')
+            span.icon.icon-lg menu
+      // a.header-logo.margin-left-no(href='index.html') Material
+      // ul.nav.nav-list.pull-right
+      //   li
+      //     a(data-toggle='menu', href='#profile')
+      //       span.access-hide John Smith
+      //       span.avatar
+      //         img(alt='alt text for John Smith avatar', src='../images/users/avatar-001.jpg')
+    nav#menu.menu(aria-hidden='true', tabindex='-1')
+      .menu-scroll
+        .menu-content
+          a.menu-logo(href='index.html') Material
+          ul.nav
+            li
+              a.waves-attach(href='ui-card.html') Cards
+            li
+              a.waves-attach(href='ui-collapse.html') Collapsible Regions
+            li
+              a.waves-attach(href='ui-dropdown.html') Dropdowns
+            li
+              a.waves-attach(href='ui-modal.html') Modals & Toasts
+            li
+              a.waves-attach(href='ui-nav.html') Navs
+            li
+              a.waves-attach(href='ui-progress.html') Progress Bars
+            li
+              a.waves-attach(href='ui-tab.html') Tabs
+            li
+              a.waves-attach(href='ui-tile.html') Tiles
+          hr
+          ul.nav
+            li
+              a.waves-attach(href='ui-button.html') Buttons
+            li
+              a.waves-attach(href='ui-form.html') Form Elements
+              span.menu-collapse-toggle.collapsed.waves-attach(data-target='#form-elements', data-toggle='collapse')
+                i.icon.menu-collapse-toggle-close close
+                i.icon.menu-collapse-toggle-default add
+              ul#form-elements.menu-collapse.collapse
+                li
+                  a.waves-attach(href='ui-form-adv.html')
+                    | Form Elements 
+                    small (materialised)
+            li
+              a.waves-attach(href='ui-icon.html') Icons
+            li
+              a.waves-attach(href='ui-table.html') Tables
+          hr
+          ul.nav
+            li
+              a.waves-attach(href='page-palette.html') Page Palettes
+              span.menu-collapse-toggle.collapsed.waves-attach(data-target='#page-palettes', data-toggle='collapse')
+                i.icon.menu-collapse-toggle-close close
+                i.icon.menu-collapse-toggle-default add
+              ul#page-palettes.menu-collapse.collapse
+                li
+                  a.waves-attach(href='page-palette-brand.html') Brand Palette
+                li
+                  a.waves-attach(href='page-palette-brand-accent.html') Accent Palette
+                li
+                  a.waves-attach(href='page-palette-amber.html') Amber Palette
+                li
+                  a.waves-attach(href='page-palette-green.html') Green Palette
+                li
+                  a.waves-attach(href='page-palette-red.html') Red Palette
+    // nav#profile.menu.menu-right(aria-hidden='true', tabindex='-1')
+    //   .menu-scroll
+    //     .menu-top
+    //       .menu-top-img
+    //         img(alt='John Smith', src='../images/samples/landscape.jpg')
+    //       .menu-top-info
+    //         a.menu-top-user(href='javascript:void(0)')
+    //           span.avatar.pull-left
+    //             img(alt='alt text for John Smith avatar', src='../images/users/avatar-001.jpg')
+    //           | John Smith
+    //       .menu-top-info-sub
+    //         small Some additional information about John Smith
+    //     .menu-content
+    //       ul.nav
+    //         li
+    //           a.waves-attach(href='javascript:void(0)')
+    //             span.icon.icon-lg account_box
+    //             | Profile Settings
+    //         li
+    //           a.waves-attach(href='javascript:void(0)')
+    //             span.icon.icon-lg add_to_photos
+    //             | Upload Photo
+    //         li
+    //           a.waves-attach(href='page-login.html')
+    //             span.icon.icon-lg exit_to_app
+    //             | Logout
+    .content
+      .content-heading
+        .container
+          .row
+            .col-lg-6.col-lg-push-3.col-sm-10.col-sm-push-1
+              h1.heading Material
+      .container
+        .row
+          .col-lg-6.col-lg-push-3.col-sm-10.col-sm-push-1
+            section.content-inner
+              p Material is an HTML5 UI design based on Google Material.
+              blockquote
+                p
+                  | A visual language for our users that synthesizes the classic principles of good design with the innovation and possibility of technology and science. This is material design.
+                p
+                  a.text-break(href='http://www.google.com/design/spec/material-design/introduction.html') http://www.google.com/design/spec/material-design/introduction.html
+              p
+                | Have a play with a 
+                a(href='http://daemonite.github.io/material/') working prototype of Material
+                | , let us know what you think at the 
+                a(href='http://labs.daemon.com.au') Daemon Labs
+                |  forum.
+              h2.content-sub-heading Components
+              .tile-wrap
+                a.tile.waves-attach(href='ui-card.html')
+                  .tile-inner
+                    span Cards
+                a.tile.waves-attach(href='ui-collapse.html')
+                  .tile-inner
+                    span Collapsible Regions
+                a.tile.waves-attach(href='ui-dropdown.html')
+                  .tile-inner
+                    span Dropdowns
+                a.tile.waves-attach(href='ui-modal.html')
+                  .tile-inner
+                    span Modal & Toasts
+                a.tile.waves-attach(href='ui-nav.html')
+                  .tile-inner
+                    span Navs
+                a.tile.waves-attach(href='ui-progress.html')
+                  .tile-inner
+                    span Progress Bars
+                a.tile.waves-attach(href='ui-tab.html')
+                  .tile-inner
+                    span Tabs
+                a.tile.waves-attach(href='ui-tile.html')
+                  .tile-inner
+                    span Tiles
+              h2.content-sub-heading Elements
+              .tile-wrap
+                a.tile.waves-attach(href='ui-button.html')
+                  .tile-inner
+                    span Button
+                a.tile.waves-attach(href='ui-form.html')
+                  .tile-inner
+                    span
+                      | Form Elements 
+                      small (basic)
+                a.tile.waves-attach(href='ui-form-adv.html')
+                  .tile-inner
+                    span
+                      | Form Elements 
+                      small (materialised)
+                a.tile.waves-attach(href='ui-icon.html')
+                  .tile-inner
+                    span Icons
+                a.tile.waves-attach(href='ui-table.html')
+                  .tile-inner
+                    span Tables
+              h2.content-sub-heading Sample Pages
+              .tile-wrap
+                a.tile.waves-attach(href='page-login.html')
+                  .tile-inner
+                    span Login Page
+                a.tile.waves-attach(href='page-palette.html')
+                  .tile-inner
+                    span Page Palettes
+    footer.footer
+      .container
+        p Material
+    // .fbtn-container
+    //   .fbtn-inner
+    //     a.fbtn.fbtn-brand-accent.fbtn-lg(data-toggle='dropdown')
+    //       span.fbtn-text Links
+    //       span.fbtn-ori.icon add
+    //       span.fbtn-sub.icon close
+    //     .fbtn-dropdown
+    //       a.fbtn(href='https://github.com/Daemonite/material', target='_blank')
+    //         span.fbtn-text Fork me on GitHub
+    //         span.fa.fa-github
+    //       a.fbtn.fbtn-blue(href='https://twitter.com/daemonites', target='_blank')
+    //         span.fbtn-text Follow Daemon on Twitter
+    //         span.fa.fa-twitter
+    //       a.fbtn.fbtn-alt(href='http://www.daemon.com.au/', target='_blank')
+    //         span.fbtn-text Visit Daemon Website
+    //         span.icon link
+    // js
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+    script(src='../js/base.min.js')
+    // js for this project
+    script(src='../js/project.min.js')
